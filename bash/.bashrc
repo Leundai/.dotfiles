@@ -1,8 +1,2 @@
-alias vi='nvim'
-alias vim='nvim'
+source ~/.shell_common
 
-export GOPATH="$HOME/go"
-export PATH="${PATH}:${GOPATH}/bin"
-
-export PATH="$HOME/.local/bin:$PATH"
-. "$HOME/.cargo/env"

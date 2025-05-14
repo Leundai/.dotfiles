@@ -1,0 +1,43 @@
+# Vim stuff
+alias vi='nvim'
+alias vim='nvim'
+
+# Shell Aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias ll='ls -lah'                  # Long listing with hidden files
+alias la='ls -A'                    # All but . and ..
+alias l='ls -CF'                    # Classify entries
+
+alias mkdir='mkdir -pv'            # Create nested dirs verbosely
+alias cp='cp -iv'                  # Prompt before overwrite
+alias mv='mv -iv'                  # Prompt before move
+alias rm='rm -i'                   # Prompt before delete
+
+# Git
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -v'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gsw='git switch'
+alias gb='git branch'
+alias gl='git log --oneline --graph --decorate'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gp='git push'
+alias glg='git log --graph --pretty=format:"%C(yellow)%h%Creset - %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+
+# Shell hygiene
+alias c='clear'
+alias h='history'
+alias path='echo -e ${PATH//:/\\n}'  # Print each $PATH entry on a new line
+
+# Env
+export GOPATH="$HOME/go"
+export PATH="${PATH}:${GOPATH}/bin"
+
+export PATH="$HOME/.local/bin:$PATH"
+. "$HOME/.cargo/env"
