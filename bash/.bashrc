@@ -1,2 +1,2 @@
 source ~/.shell_common
-
+eval "$(starship init bash)"
